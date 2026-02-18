@@ -1,17 +1,19 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
     int number;
-    std::cout << "Введите число для поиска делителей: ";
-    std::cin >> number;
+    cout << "Введите число для поиска делителей: ";
+    cin >> number;
 
-    std::cout << "Делители числа " << number << ": ";
+    cout << "Делители числа " << number << ": ";
     for (int i = 1; i <= number; i++) {
         if (number % i == 0) {
-            std::cout << i << " ";
+            cout << i << " ";
         }
     }
-    std::cout << std::endl;
+    cout << endl;
 
     return 0;
 }
